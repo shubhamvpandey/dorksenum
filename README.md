@@ -24,9 +24,10 @@ Dork Search is a tool that allows you to perform various Google dorks to search 
    ```
 
 2. Install the required dependencies:
+   pip install requests beautifulsoup4
 
    ```
-   pip install requests beautifulsoup4
+   
    ```
 
 3. Run the script:
