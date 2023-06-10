@@ -29,8 +29,10 @@ Dork Search is a tool that allows you to perform various Google dorks to search 
    ```
 
   3. Run the script:
+   ```
    python dorkenum.py
-
+   
+   ```
 4. Follow the on-screen instructions to enter the keyword or domain name and select the dork options.
 
 ## Contributing
