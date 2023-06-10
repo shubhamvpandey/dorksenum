@@ -33,11 +33,6 @@ def run_dork(keyword, dork):
     else:
         print("No results found.")
 
-# Function to perform the Postman search
-def postman_search(keyword):
-    url = f"https://www.postman.com/search?q={keyword}&scope=public&type=request"
-    print("Postman search URL:", url)
-
 # Function to get the dork query based on the dork number
 def get_query(keyword, dork):
     dork_queries = {
@@ -55,7 +50,7 @@ def get_query(keyword, dork):
         12: f"site:{keyword} inurl:readme OR inurl:license OR inurl:install OR inurl:setup OR inurl:config",
         13: f"site:{keyword} inurl:/phpinfo.php OR inurl:.htaccess",
         14: f"site:atlassian.net OR site:bitbucket.org {keyword}",
-        15: ""  # No specific dork query for option 15
+        15: f"https://www.postman.com/search?q={keyword}&scope=public&type=request"
     }
     return dork_queries.get(dork, "")
 
@@ -80,16 +75,16 @@ def display_help():
     print("15. Postman Search")
     print("-h or --help: Display this help menu")
 
-# Introduction and credit
-print("Welcome to Dork Search!")
-print("This tool allows you to perform various Google dorks to search for specific information.")
-print("Dork Search is developed by Shubham Pandey.")
-print("Give credit to the developer and provide feedback to improve the tool.")
-print("GitHub URL: https://github.com/shubhamvpandey")
-print("LinkedIn URL: https://www.linkedin.com/in/shubham-pandey-10704014b/")
+# Function to perform Postman search
+def postman_search(keyword):
+    query = get_query(keyword, 15)
+    print(f"\n----- Postman Search -----\n")
+    print(f"Postman search URL: {query}")
+    webbrowser.open(query)
 
 # Interactive menu
-print("\nPlease provide a keyword or domain name to search for.")
+print("Welcome to Dork Search!")
+print("Please provide a keyword or domain name to search for.")
 keyword = input("Keyword or domain name: ")
 
 print("\nAvailable dorks:")
