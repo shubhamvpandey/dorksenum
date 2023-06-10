@@ -41,7 +41,7 @@ Contributions are welcome! If you have any suggestions, bug reports, or feature 
 
 ## Credits
 
-Dork Search is developed by [Your Name](https://github.com/your-username). You can reach out to me on [LinkedIn](https://www.linkedin.com/in/your-profile) for any feedback or questions.
+Dork Search is developed by Shubham Pandey (https://github.com/shubhamvpandey). You can reach out to me on [LinkedIn](https://www.linkedin.com/in/shubham-pandey-10704014b/)) for any feedback or questions.
 
 ## License
 
