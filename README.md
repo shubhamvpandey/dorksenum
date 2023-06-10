@@ -21,10 +21,10 @@ Dork Search is a tool that allows you to perform various Google dorks to search 
 
    ```
    git clone https://github.com/shubhamvpandey/dorksenum.git
+   Install the required dependencies:
    ```
 
-2. Install the required dependencies:
-   pip install requests beautifulsoup4
+2. pip install requests beautifulsoup4
 
    ```
    
