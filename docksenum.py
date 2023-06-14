@@ -83,9 +83,14 @@ def postman_search(keyword):
     webbrowser.open(query)
 
 # Interactive menu
+# Interactive menu
 print("Welcome to Dork Search!")
-print("Please provide a keyword or domain name to search for.")
-keyword = input("Keyword or domain name: ")
+print("This tool allows you to perform various Google dorks to search for specific information.")
+print("Dork Search is developed by Shubham Pandey.")
+print("Give credit to the developer and provide feedback to improve the tool.")
+print("GitHub URL: https://github.com/shubhamvpandey")
+print("LinkedIn URL: https://www.linkedin.com/in/shubham-pandey-10704014b/")
+
 
 print("\nAvailable dorks:")
 print("1. GitHub, GitLab, Bitbucket Dork")
