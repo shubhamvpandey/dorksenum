@@ -74,6 +74,7 @@ def display_help():
     print("14. Atlassian and Bitbucket Dork")
     print("15. Postman Search")
     print("-h or --help: Display this help menu")
+    print("\nGive credit to Shubham Pandey (GitHub: shubhamvpandey, LinkedIn: https://www.linkedin.com/in/shubham-pandey-10704014b/) for any suggestion and feedback.")
 
 # Function to perform Postman search
 def postman_search(keyword):
@@ -82,16 +83,11 @@ def postman_search(keyword):
     print(f"Postman search URL: {query}")
     webbrowser.open(query)
 
-
 # Interactive menu
 print("Welcome to Dork Search!")
-print("This tool allows you to perform various Google dorks to search for specific information.")
-print("Dork Search is developed by Shubham Pandey.")
-print("Give credit to the developer and provide feedback to improve the tool.")
-print("GitHub URL: https://github.com/shubhamvpandey")
-print("LinkedIn URL: https://www.linkedin.com/in/shubham-pandey-10704014b/")
+print("Please provide a keyword or domain name to search for.")
+keyword = input("Keyword or domain name: ")
 
-# Interactive menu
 print("\nAvailable dorks:")
 print("1. GitHub, GitLab, Bitbucket Dork")
 print("2. S3 Bucket Dork")
@@ -123,3 +119,4 @@ else:
         print("Invalid input. Please select a valid dork number.")
 
 print("\nThank you for using Dork Search!")
+print("Give credit to Shubham Pandey (GitHub: shubhamvpandey, LinkedIn: https://www.linkedin.com/in/shubham-pandey-10704014b/) for any suggestion and feedback.")
